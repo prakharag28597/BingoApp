@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1013064950016",
+    "firebase_url": "https://bingotest1-c28c4.firebaseio.com",
+    "project_id": "bingotest1-c28c4",
+    "storage_bucket": "bingotest1-c28c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013064950016:android:a28287b9e21a75d4",
+        "android_client_info": {
+          "package_name": "prakhar.bingotest1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013064950016-moct43tkrrses92pomg4debn44lr8sen.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "prakhar.bingotest1",
+            "certificate_hash": "8e3a875bee73eab863a5c11a570ac7febafa8735"
+          }
+        },
+        {
+          "client_id": "1013064950016-mqal2nm87ns4a82spe4rjarsofu3dkid.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr3YQNLyRqHS0CRFQKDWMFbgKMu74AdJ4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013064950016-mqal2nm87ns4a82spe4rjarsofu3dkid.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
