@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BingoTest1</string>
+    <string name="title_activity_leader_board">LeaderBoard</string>
 </resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3">
+
+    <TextView
+        android:text="some@email.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_weight="1"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:text="100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/score"
+        android:layout_weight="1"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:text="Online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/online_status"
+        android:layout_weight="1"
+        android:textSize="18dp"/>
+</LinearLayout>

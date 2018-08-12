@@ -4,9 +4,9 @@ package prakhar.bingotest1;
  * Created by prakharag on 10-08-2018.
  */
 public class UserDetails {
-    private String userId;
     private String email;
     private int score;
+    private boolean online;
 
     public int getScore() {
         return score;
@@ -16,8 +16,8 @@ public class UserDetails {
         return email;
     }
 
-    public String getUserId() {
-        return userId;
+    public boolean isOnline() {
+        return online;
     }
 
     public void setEmail(String email) {
@@ -28,7 +28,7 @@ public class UserDetails {
         this.score = score;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setOnline(boolean online) {
+        this.online = online;
     }
 }
