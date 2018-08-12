@@ -5,10 +5,10 @@ package prakhar.bingotest1;
  */
 public class UserDetails {
     private String email;
-    private int score;
-    private boolean online;
+    private String score;
+    private String online;
 
-    public int getScore() {
+    public String getScore() {
         return score;
     }
 
@@ -16,7 +16,7 @@ public class UserDetails {
         return email;
     }
 
-    public boolean isOnline() {
+    public String getOnline() {
         return online;
     }
 
@@ -24,11 +24,11 @@ public class UserDetails {
         this.email = email;
     }
 
-    public void setScore(int score) {
+    public void setScore(String score) {
         this.score = score;
     }
 
-    public void setOnline(boolean online) {
+    public void setOnline(String online) {
         this.online = online;
     }
 }

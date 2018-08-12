@@ -1,8 +1,12 @@
 package prakhar.bingotest1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -18,6 +22,7 @@ public class LeaderBoard extends AppCompatActivity {
     private ListView listView;
     private DatabaseReference databaseReference;
     private List<String> emailList, scoreList, onlineStatusList;
+    LeaderBoardAdapter leaderBoardAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +51,7 @@ public class LeaderBoard extends AppCompatActivity {
                     onlineStatusList.add(onlineStatus);
                 }
                 populateData();
+                setOnClickOnList();
             }
 
             @Override
@@ -57,8 +63,21 @@ public class LeaderBoard extends AppCompatActivity {
     }
 
     private void populateData() {
-        LeaderBoardAdapter leaderBoardAdapter = new LeaderBoardAdapter(getLayoutInflater(), emailList, scoreList, onlineStatusList);
+        leaderBoardAdapter = new LeaderBoardAdapter(getLayoutInflater(), emailList, scoreList, onlineStatusList);
         listView.setAdapter(leaderBoardAdapter);
     }
+
+    void setOnClickOnList() {
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                System.out.println(i+"---------------------<<<<<<");
+                UserDetails userDetails = (UserDetails) adapterView.getItemAtPosition(i);
+                Toast.makeText(getApplicationContext(), "Invite sent to "+userDetails.getEmail(),Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
 
 }

@@ -1,6 +1,5 @@
 package prakhar.bingotest1;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,7 +31,11 @@ public class LeaderBoardAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int i) {
-        return null;
+        UserDetails userDetails = new UserDetails();
+        userDetails.setEmail(emailList.get(i));
+        userDetails.setOnline(onlineStatusList.get(i));
+        userDetails.setScore(scoreList.get(i));
+        return userDetails;
     }
 
     @Override
