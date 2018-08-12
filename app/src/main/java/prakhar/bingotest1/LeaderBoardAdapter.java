@@ -27,7 +27,6 @@ public class LeaderBoardAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        Log.d("size oif list ps ---", ""+emailList.size());
         return emailList.size();
     }
 
